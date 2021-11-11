@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\abdul\\RiderProjects\\Blazor\\DefaultBlazor\\DefaultBlazor.csproj": {}
+    "C:\\Users\\abdul\\RiderProjects\\BlazorTodoDB\\DefaultBlazor\\DefaultBlazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\abdul\\RiderProjects\\Blazor\\DefaultBlazor\\DefaultBlazor.csproj": {
+    "C:\\Users\\abdul\\RiderProjects\\BlazorTodoDB\\DefaultBlazor\\DefaultBlazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abdul\\RiderProjects\\Blazor\\DefaultBlazor\\DefaultBlazor.csproj",
+        "projectUniqueName": "C:\\Users\\abdul\\RiderProjects\\BlazorTodoDB\\DefaultBlazor\\DefaultBlazor.csproj",
         "projectName": "DefaultBlazor",
-        "projectPath": "C:\\Users\\abdul\\RiderProjects\\Blazor\\DefaultBlazor\\DefaultBlazor.csproj",
+        "projectPath": "C:\\Users\\abdul\\RiderProjects\\BlazorTodoDB\\DefaultBlazor\\DefaultBlazor.csproj",
         "packagesPath": "C:\\Users\\abdul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abdul\\RiderProjects\\Blazor\\DefaultBlazor\\obj\\",
+        "outputPath": "C:\\Users\\abdul\\RiderProjects\\BlazorTodoDB\\DefaultBlazor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\abdul\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -20,7 +20,8 @@
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
         },
         "frameworks": {
           "net5.0": {
@@ -37,6 +38,22 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
